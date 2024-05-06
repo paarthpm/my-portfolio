@@ -6,3 +6,8 @@ body{
   padding: 0;
   font-family: "IBM Plex Sans", serif;
 }
+/* appbar modification */
+.custom-appbar {
+  background-color: transparent;
+  backdrop-filter: blur(10px); 
+}

@@ -1,10 +1,9 @@
-import Header from "./components/Header"
-import Navigation from "./components/Navigation"
+import Content from "./components/Content"
+
 function App() {
   return (
     <main>
-      <Header/>
-      <Navigation/>
+      <Content/>
     </main>
   )
 }
