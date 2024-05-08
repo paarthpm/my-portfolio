@@ -44,7 +44,7 @@ const Contact = () => {
               <hr />
               <Box display="flex" alignItems="center" className="social-icons-row">
                 <a href="https://www.linkedin.com/in/partha-mout-1188349a/" target='_blank'><FaLinkedin className='connect-social-icon social-style'/></a>
-                <a href="https://github.com/PaarthPM" target='_blank'><FaGithub className='connect-social-icon social-style'/></a>
+                <a href="https://github.com/paarthpm" target='_blank'><FaGithub className='connect-social-icon social-style'/></a>
                 <a href="https://www.instagram.com/paarth_pratim/" target='_blank'><FaInstagram className='connect-social-icon social-style'/></a>
                 <a href="https://www.youtube.com/channel/UCXQlC4ZxlY7mr_pvUR9lB7w" target='_blank'><FaYoutube className='connect-social-icon social-style'/></a>
               </Box>
