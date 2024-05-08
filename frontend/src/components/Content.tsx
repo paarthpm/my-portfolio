@@ -137,16 +137,16 @@ export default function DrawerAppBar(props: Props) {
       <Box component="main" id="main-section" sx={{ p: 3 }}>
         <Toolbar />
         <CircleAvatarWithNameWrapper  name="Partha Pratim Mout" imageSrc="profile.jpg" bio="Software Engineer | Creative Soul"/> 
-        <div id="section-0">
+        <div id="section-0" className="section-style">
           <AboutMe />
         </div>
-        <div id="section-1">
+        <div id="section-1" className="section-style">
           <Work />
         </div>
-        <div id="section-2">
+        <div id="section-2" className="section-style">
           <Projects />
         </div>
-        <div id="section-3">
+        <div id="section-3" className="section-style">
           <Contact />
         </div>
       </Box>

@@ -14,8 +14,8 @@ const CircleAvatarWithName: React.FC<Props> = ({ name, imageSrc, bio }) => {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 3 }}>
       <Avatar sx={{ width: 200, height: 200, mb: 2 }} src={imageSrc} alt={name} />
-      <Typography variant={isSmallScreen ? "h4" : "h2"} align="center">{name}</Typography>
-      {bio && <Typography variant={isSmallScreen ? "h6" : "h5"} align="center">{bio}</Typography>}
+      <Typography variant={isSmallScreen ? "h4" : "h2"} align="center" style={{ fontFamily: '"Caveat", cursive', fontOpticalSizing: 'auto', fontWeight: '<weight>', fontStyle: 'normal' }}>{name}</Typography>
+      {bio && <Typography variant={isSmallScreen ? "body2" : "body1"} align="center" style={{ fontFamily: '"M PLUS Code Latin", monospace', fontWeight: 200, fontStyle: 'normal', fontOpticalSizing: 'auto', fontVariationSettings:'"wdth" 100'}}>{bio}</Typography>}
     </Box>
   );
 };

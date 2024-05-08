@@ -6,7 +6,9 @@ import { createTheme, ThemeProvider } from '@mui/material'
 import { BrowserRouter } from 'react-router-dom'
 const theme = createTheme({
   typography:{
-    fontFamily: "IBM Plex Sans, serif"
+    fontFamily: '"Josefin Sans", sans-serif',
+    fontWeightRegular: '300',
+    fontSize: 16,
   },
   palette: {
     // primary color considered by the theme
