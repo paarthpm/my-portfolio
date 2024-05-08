@@ -32,10 +32,86 @@ body{
   font-weight: bold;
 }
 
-.project-left-section{
+.project-dark-section{
   background-color: gray;
+  text-align: center;
 }
 
-.project-right-section{
+.project-dark-section h4{
+  padding-top: 20px;
+  font-weight: 500;
+}
+
+.project-normal-section .section-para{
+  padding-top: 60px;
+  text-align: center;
+}
+
+.project-dark-section .section-btn{
+  text-decoration: none;
+}
+.project-light-section{
   background-color: white;
+}
+
+.object-detection-img{
+  width: 60%;
+  padding-left: 50px;
+  margin-left: 50px;
+}
+
+.connect-mid-panel{
+  text-align: center;
+}
+.connect-icon{
+  width: 30px;
+  height: 30px;;
+}
+
+.connect-mid-panel h2{
+  margin-top: 0;
+}
+
+.connect-card{
+  height: 250px;
+  text-align: center;
+  padding-top: 60px;
+  border-bottom: 8px solid black;
+}
+
+.connect-card .card-text{
+  color: black;
+}
+
+.connect-card .card-head{
+  letter-spacing: 4px;
+}
+
+.connect-email-icon{
+  color: black;
+  width: 25px;
+  height: 25px;
+}
+
+.connect-social-icon{
+  color: black;
+  width: 23px;
+  height: 23px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+.social-icons-row{
+  justify-content: center;
+}
+.social-style{
+  margin: 0 8px;
+}
+
+.footer{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
