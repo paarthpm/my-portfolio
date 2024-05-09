@@ -115,3 +115,17 @@ a{
   padding-top: 30px;
   padding-bottom: 30px;
 }
+/* css changes for youtube video responsive behaviour */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

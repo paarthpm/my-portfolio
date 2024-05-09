@@ -25,7 +25,9 @@ const Projects = () => {
       <h4>YouTube links for some of my videos</h4>
       <Grid container spacing={4}>
         <Grid item xs={12} sm={6} className=''>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Z7zMMa8Z83Q?si=PtKPRG_mpKy2lOwA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <div className="video-container">
+          <iframe src="https://www.youtube.com/embed/Z7zMMa8Z83Q?si=PtKPRG_mpKy2lOwA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        </div>
         </Grid>
         <Grid item xs={12} sm={6} className='project-normal-section'>
           <p className='section-para'>I did a dig on a fake recruitment website which was spamming and looting hundreds of job aspirants.</p>
@@ -36,12 +38,16 @@ const Projects = () => {
           <p className='section-para'>Helped my friend by analyzing a fake shopping website which was gathering users via Instagram and delivering wrong products.</p>
         </Grid>
         <Grid item xs={12} sm={6} className=''>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/0oDYBjKvx2w?si=n-QKcFz-S1CeFG6t" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <div className="video-container">
+          <iframe src="https://www.youtube.com/embed/0oDYBjKvx2w?si=n-QKcFz-S1CeFG6t" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        </div>
         </Grid>
       </Grid>
       <Grid container spacing={4}>
         <Grid item xs={12} sm={6} className=''>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jca4aa_nBok?si=aAlgCeHpH9hg3Cos" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <div className="video-container">
+          <iframe src="https://www.youtube.com/embed/Jca4aa_nBok?si=aAlgCeHpH9hg3Cos" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        </div>
         </Grid>
         <Grid item xs={12} sm={6} className='project-normal-section'>
           <p className='section-para'>Joy of Nature is an Instagram effect which utilizes the back camera of modern phones with gyroscopes. This effect was my submission to Hackathon Augmented Reality competition from Facebook.</p>
@@ -52,7 +58,9 @@ const Projects = () => {
           <p className='section-para'>Gunin and Dhonti are two animated characters which I built and animated using Adobe Animate and Illustratior. It's a promotional fun informative video for Knowmore Assam site.</p>
         </Grid>
         <Grid item xs={12} sm={6} className=''>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/45ElMUmae9M?si=FfSzcUte5Sz01Xu3" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <div className="video-container">
+          <iframe src="https://www.youtube.com/embed/45ElMUmae9M?si=FfSzcUte5Sz01Xu3" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        </div>
         </Grid>
       </Grid>
   </Typography>
