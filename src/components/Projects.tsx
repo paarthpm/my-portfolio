@@ -47,6 +47,14 @@ const Projects = () => {
           <p className='section-para'>Joy of Nature is an Instagram effect which utilizes the back camera of modern phones with gyroscopes. This effect was my submission to Hackathon Augmented Reality competition from Facebook.</p>
         </Grid>
       </Grid>
+      <Grid container spacing={4}>
+        <Grid item xs={12} sm={6} className='project-normal-section'>
+          <p className='section-para'>Gunin and Dhonti are two animated characters which I built and animated using Adobe Animate and Illustratior. It's a promotional fun informative video for Knowmore Assam site.</p>
+        </Grid>
+        <Grid item xs={12} sm={6} className=''>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/45ElMUmae9M?si=FfSzcUte5Sz01Xu3" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        </Grid>
+      </Grid>
   </Typography>
   )
 }
