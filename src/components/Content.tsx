@@ -113,7 +113,7 @@ export default function DrawerAppBar(props: Props) {
                   {item}
                 </Button>
               ))}
-              <a href="#"><Button variant="outlined" sx={{ color: '#fff',borderColor: '#fff', textTransform:'capitalize' }} color="primary">Resume</Button></a>
+              <a href="https://raw.githubusercontent.com/paarthpm/my-portfolio/main/resume_partha_mout.pdf"><Button variant="outlined" sx={{ color: '#fff',borderColor: '#fff', textTransform:'capitalize' }} color="primary">Resume</Button></a>
             </Box>
           </Toolbar>
         </AppBar>
