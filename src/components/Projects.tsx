@@ -8,7 +8,7 @@ const Projects = () => {
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6} className='project-dark-section'>
           <h4>Knowmore <span className='text-highlight-red'>Assam</span></h4>
-          <p>An informative webiste with topics on Assam. Learn, explore, join the writer's community and post articles.</p>
+          <p>An informative webiste with topics on Assam in both English and Assamese language. Learn, explore, join the writer's community and post articles.</p>
           <a href="https://youtu.be/o8ZoScDuxhM" target='_blank'><Button variant="contained" size="small" className='section-btn'>See video</Button></a>
         </Grid>
         <Grid item xs={12} sm={6} className='project-light-section'>
