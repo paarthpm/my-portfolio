@@ -138,7 +138,7 @@ export default function DrawerAppBar(props: Props) {
         {/* main content */}
         <Box component="main" id="main-section" sx={{ p: 3 }}>
           <Toolbar />
-          <CircleAvatarWithNameWrapper  name="Partha Pratim Mout" imageSrc="profile.jpg" bio="Software Engineer | Creative Soul"/> 
+          <CircleAvatarWithNameWrapper  name="Partha Pratim Mout" imageSrc="partha-front-pic.jpg" bio="Software Engineer | Creative Soul"/> 
           <div id="section-0" className="section-style">
             <AboutMe />
           </div>
