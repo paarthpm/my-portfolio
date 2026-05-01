@@ -12,8 +12,19 @@ const CircleAvatarWithName: React.FC<Props> = ({ name, imageSrc, bio }) => {
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 3 }}>
-      <Avatar sx={{ width: 800, height: 400, mb: 2, borderRadius: '8px', objectFit: 'cover' }} src={imageSrc} alt={name} />
+    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 3, px: 2 }}>
+      <Avatar 
+        sx={{ 
+          width: { xs: '100%', sm: 600, md: 800 }, 
+          height: { xs: 200, sm: 300, md: 400 }, 
+          mb: 2, 
+          borderRadius: '8px', 
+          objectFit: 'cover',
+          maxWidth: '100%'
+        }} 
+        src={imageSrc} 
+        alt={name} 
+      />
       <Typography variant={isSmallScreen ? "h4" : "h2"} align="center" style={{ fontFamily: '"Caveat", cursive', fontOpticalSizing: 'auto', fontWeight: '<weight>', fontStyle: 'normal' }}>{name}</Typography>
       {bio && <Typography variant={isSmallScreen ? "body2" : "body1"} align="center" style={{ fontFamily: '"M PLUS Code Latin", monospace', fontWeight: 200, fontStyle: 'normal', fontOpticalSizing: 'auto', fontVariationSettings:'"wdth" 100'}}>{bio}</Typography>}
     </Box>

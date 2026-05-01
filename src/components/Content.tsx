@@ -4,12 +4,14 @@ import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
+import Fade from '@mui/material/Fade';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -56,16 +58,26 @@ export default function DrawerAppBar(props: Props) {
 
   // for mobile view
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+    <Box 
+      sx={{ 
+        textAlign: 'center', 
+        display: 'flex', 
+        flexDirection: 'column', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        height: '100%', 
+        color: 'white'
+      }}
+    >
+      <Typography variant="h4" sx={{ my: 2 }}>
         Home
       </Typography>
-      <Divider />
-      <List>
+      <Divider sx={{ width: '80%', mb: 2 }} />
+      <List sx={{ width: '100%', maxWidth: 360 }}>
         {navItems.map((item, index) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => handleNavItemClicked(index)}>
-              <ListItemText primary={item} />
+            <ListItemButton sx={{ textAlign: 'center', justifyContent: 'center' }} onClick={() => handleNavItemClicked(index)}>
+              <ListItemText primary={item} primaryTypographyProps={{ variant: 'h6' }} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -85,7 +97,7 @@ export default function DrawerAppBar(props: Props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{ px: { xs: 1.25, sm: 3 } }}>
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
         <AppBar component="nav" className="custom-appbar" elevation={0}>
@@ -124,19 +136,38 @@ export default function DrawerAppBar(props: Props) {
             variant="temporary"
             open={mobileOpen}
             onClose={handleDrawerToggle}
+            TransitionComponent={Fade}
             ModalProps={{
               keepMounted: true,
             }}
             sx={{
               display: { xs: 'block', sm: 'none' },
-              '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth,  bgcolor: 'primary.main' },
+              '& .MuiDrawer-paper': { 
+                boxSizing: 'border-box', 
+                width: '100vw', 
+                height: '100vh', 
+                bgcolor: 'primary.main',
+                position: 'relative'
+              },
             }}
           >
+            <IconButton 
+              onClick={handleDrawerToggle} 
+              sx={{ 
+                position: 'absolute', 
+                top: 16, 
+                left: 16, 
+                color: 'white',
+                zIndex: 1
+              }}
+            >
+              <CloseIcon />
+            </IconButton>
             {drawer}
           </Drawer>
         </nav>
         {/* main content */}
-        <Box component="main" id="main-section" sx={{ p: 3 }}>
+        <Box component="main" id="main-section" sx={{ p: { xs: 1, sm: 3 } }}>
           <Toolbar />
           <CircleAvatarWithNameWrapper  name="Partha Pratim Mout" imageSrc="partha-front-pic.jpg" bio="Software Engineer | Creative Soul"/> 
           <div id="section-0" className="section-style">

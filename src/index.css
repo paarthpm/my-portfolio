@@ -14,7 +14,13 @@ body{
 }
 
 .section-style{
-  padding-top: 50px;
+  padding-top: 30px;
+}
+
+@media (min-width: 600px) {
+  .section-style{
+    padding-top: 50px;
+  }
 }
 
 .work-grid-section h5 {
@@ -32,6 +38,17 @@ body{
   font-weight: bold;
 }
 
+.work-logo {
+  width: 120px;
+  background-color: white;
+}
+
+@media (min-width: 600px) {
+  .work-logo {
+    width: 200px;
+  }
+}
+
 .project-dark-section{
   background-color: gray;
   text-align: center;
@@ -43,8 +60,14 @@ body{
 }
 
 .project-normal-section .section-para{
-  padding-top: 60px;
+  padding-top: 20px;
   text-align: center;
+}
+
+@media (min-width: 600px) {
+  .project-normal-section .section-para{
+    padding-top: 60px;
+  }
 }
 
 .project-dark-section .section-btn{
@@ -56,8 +79,18 @@ body{
 
 .object-detection-img{
   width: 60%;
-  padding-left: 50px;
-  margin-left: 50px;
+  padding-left: 0;
+  margin-left: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .object-detection-img{
+    width: 60%;
+    padding-left: 50px;
+    margin-left: 50px;
+  }
 }
 
 .connect-mid-panel{
@@ -73,10 +106,19 @@ body{
 }
 
 .connect-card{
-  height: 250px;
+  height: auto;
+  min-height: 200px;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-bottom: 8px solid black;
+}
+
+@media (min-width: 600px) {
+  .connect-card{
+    height: 250px;
+    padding-top: 60px;
+  }
 }
 
 .connect-card .card-text{

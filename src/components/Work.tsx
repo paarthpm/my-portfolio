@@ -6,7 +6,7 @@ const Work = () => {
         <h4>Work</h4>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={4}>
-            <img src="alegralabs-logo.png" alt="Alegra Labs Logo" style={{width:'200px', backgroundColor:'white'}} />
+            <img src="alegralabs-logo.png" alt="Alegra Labs Logo" className="work-logo" />
           </Grid>
           <Grid item xs={12} sm={8} className='work-grid-section'>
             <h5>Software Engineer</h5>
