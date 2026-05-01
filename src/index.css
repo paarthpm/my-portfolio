@@ -5,7 +5,17 @@ body{
   margin: 0;
   padding: 0;
   font-family: "IBM Plex Sans", serif;
-  
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+img, iframe {
+  max-width: 100%;
+  height: auto;
 }
 /* appbar modification */
 .custom-appbar {
@@ -52,6 +62,7 @@ body{
 .project-dark-section{
   background-color: gray;
   text-align: center;
+  padding: 20px;
 }
 
 .project-dark-section h4{
@@ -75,6 +86,7 @@ body{
 }
 .project-light-section{
   background-color: white;
+  padding: 20px;
 }
 
 .object-detection-img{

@@ -95,8 +95,8 @@ export default function DrawerAppBar(props: Props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Container maxWidth="lg" sx={{ px: { xs: 1.25, sm: 3 } }}>
-      <Box sx={{ display: 'flex' }}>
+    <Container maxWidth="lg" sx={{ px: { xs: 1.25, sm: 3 }, width: '100%' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <CssBaseline />
         <AppBar component="nav" className="custom-appbar" elevation={0}>
           <Toolbar>
@@ -141,7 +141,7 @@ export default function DrawerAppBar(props: Props) {
               display: { xs: 'block', sm: 'none' },
               '& .MuiDrawer-paper': { 
                 boxSizing: 'border-box', 
-                width: '100vw', 
+                width: '100%', 
                 height: '100vh', 
                 bgcolor: 'primary.main',
                 position: 'relative'
