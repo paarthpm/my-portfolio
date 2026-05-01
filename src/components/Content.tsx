@@ -25,7 +25,6 @@ interface Props {
   window?: () => Window;
 }
 
-const drawerWidth = 240;
 const navItems = ['About Me', 'Work', 'Projects', 'Contact'];
 
 export default function DrawerAppBar(props: Props) {
@@ -136,7 +135,6 @@ export default function DrawerAppBar(props: Props) {
             variant="temporary"
             open={mobileOpen}
             onClose={handleDrawerToggle}
-            TransitionComponent={Fade}
             ModalProps={{
               keepMounted: true,
             }}
