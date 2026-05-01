@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <Typography>
       <h4>Foundational Projects</h4>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} className='project-container'>
         <Grid item xs={12} sm={6} className='project-dark-section'>
           <h4>Knowmore <span className='text-highlight-red'>Assam</span></h4>
           <p>An informative webiste with topics on Assam in both English and Assamese language. Learn, explore, join the writer's community and post articles.</p>
