@@ -9,7 +9,7 @@ const Projects = () => {
         <Grid item xs={12} sm={6} className='project-dark-section'>
           <h4>Knowmore <span className='text-highlight-red'>Assam</span></h4>
           <p>An informative webiste with topics on Assam in both English and Assamese language. Learn, explore, join the writer's community and post articles.</p>
-          <a href="https://youtu.be/o8ZoScDuxhM" target='_blank'><Button variant="contained" size="small" className='section-btn'>See video</Button></a>
+          <a href="https://knowmoreassam.xo.je/" target='_blank'><Button variant="contained" size="small" className='section-btn'>Check Site Here</Button></a>
         </Grid>
         <Grid item xs={12} sm={6} className='project-light-section'>
           <img src="knowmore-assam-first-view.png" alt="Knowmore Assam Landing Page" width={'100%'}/>
